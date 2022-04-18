@@ -1,31 +1,31 @@
 # Work Day Scheduler Starter Code
 ## Purpose
-The purpose of this webpage is to create a timed five question quiz on Javascript knowledge. </br>
-Users will have a total of 100 seconds to complete the quiz. Each time they miss a question the user will lose 10 seconds and 10 points will be deducted from their final score. </br>
-Upon clicking "Start Quiz" the users first question will appear to choose from 4 multiple choice options. </br>
-Whether the user selects an incorrect or correct answer it will display accordingly at the bottom of the quiz window.</br>
-Once completing the quiz or the timer hits zero the quiz will stop running and the highscore will then be displayed. </br>
-When the highscore displays the user can enter their initials and it will take them to the highscreen window to show how their peers did with the quiz. </br>
-They may also clear the highscores and go back to try another attempt at the quiz if they like.
-
+The purpose of this webpage is to create a "normal work day schedule" spanning from 9AM - 5PM. </br>
+Upon opening the webpage the user is presented with the current day and 9 time block from 9-5pm in descending order. </br>
+The user may enter in the text area just right of whatever time period they want to enter in an event for that time. </br>
+Once they enter in the event in their selected timeblock they can select save so it wont go away if they were to close or refresh the webpage. 
+They will also be presented with a message towards the top of the webpage that their event is saved in the local storage. </br>
+The calendar also will display differently based on what time it is. If the current hour has passed then it will display gray. 
+If the time is present then it will display red for the time block and if it is in the future the time block will display green. </br>
+This calendar may be utilized for anyone with a busy day and needs a webpage to go to see what is up and coming or what has already passed.
 ## Built With
 * HTML
 * CSS
 * JS
 
+## Resources and Student cohesion
+- https://www.geeksforgeeks.org/moment-js-moment-hour-method/ This weblink is where i got the function to check the current hour 
+- I worked with William Grout, Andrea Rowland, Morgan Goodsell, Hiro, Valeria Garcia and Alex Lathrop while perfecting the HTML and Javascript for this code.
+- We ended up using bits and pieces from eachothers code to make it our own. 
+
 ## Moving Forward
-- I would like to add more functionality to the quiz to play sounds when the user gets a question right or wrong. Which is currently in the code just commented out for now.
+- I would like to add a calendar at the top to schedule things in the future as well
 
-## Lessons Learned
-I learned a lot throughout this project
-- I utilized all of my resources doing this from scratch. To include my friends that are in the field now, my tutor / TA and a whole lot of google.
-- I learned a lot of advanced Javascript to make this work the way not only I wanted it to work but also how the cohort wanted this to function. 
-
-### Web link:
-- My [website](https://gerushays.github.io/timed-quiz/)
+## Web link:
+- My [website](https://gerushays.github.io/Work-Scheduler/)
 
 ## Screenshot
-![Timed-quiz-screenshot](./assets/images/timed-quiz-screenshot.png)
+![Work-scheduler-screenshot](./Develop/images/Work-scheduler-screenshot.png)
 
 ## Contribution
 Made with ❤️ by Gerus Hays
