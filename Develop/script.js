@@ -13,7 +13,6 @@ $(document).ready(function(){
         localStorage.setItem(time, text);
     });
 
-    
     // gets the text and time from localStorage and saves it so it doesnt go away after you hit refresh
     $("#09AM .text").val(localStorage.getItem("09AM"));
     $("#10AM .text").val(localStorage.getItem("10AM"));
@@ -25,10 +24,25 @@ $(document).ready(function(){
     $("#04PM .text").val(localStorage.getItem("04PM"));
     $("#05PM .text").val(localStorage.getItem("05PM"));
 
+    // function to update the rows on colors each hour
+    function updateTime() {
+        // moment to update rows and check the time for current hour they are in
+        var currentHour = moment().hour();
+        // Jquery to select the class of row to change the color depending on what time it is
+        $(".text").each(function(){
+            var hour = parseInt($(this).attr("class"));
 
-
-
-
-
-
+            if (hour < currentHour) {
+                $(this).addClass("past");
+            } else if (hour === currentHour) {
+                $(this).removeClass("past");
+                $(this).addClass("present");
+            } else {
+                $(this).removeClass("past");
+                $(this).removeClass("present");
+                $(this).addClass("future");
+            }
+        })
+    }
+updateTime();
 })
